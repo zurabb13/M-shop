@@ -16,3 +16,23 @@
   border-radius: 4px;
   background-color: transparent;
 }
+.inp {
+  width: 260px;
+  height: 44px;
+  @include font('Ubuntu-Regular', $gray, 14, 400);
+  padding: 11px 0 12px 16px;
+  border: 1px solid $gray-200;
+  background: $gray-200;
+  border-radius: 4px;
+  outline: none;
+}
+.inp-large {
+  width: 414px;
+  height: 44px;
+  @include font('Ubuntu-Regular', $gray, 14, 400);
+  padding: 11px 0 12px 16px;
+  border: 1px solid $gray-200;
+  background: $gray-200;
+  border-radius: 4px;
+  outline: none;
+}

@@ -1,0 +1,96 @@
+@import '../../../../../assets/scss/link';
+.section {
+  position: relative;
+  top: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  h2 {
+    @include font('Ubuntu-Bold', $black, 46, 700);
+  }
+  p {
+    @include font('Ubuntu-Regular', $gray, 18, 400);
+    line-height: 27px;
+  }
+  .video {
+    margin: 40px 0 180px 0;
+  }
+}
+.clicked {
+  display: inline-block;
+  position: relative;
+  top: -50%;
+  left: -50%;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50%;
+  background: $primary;
+  text-align: center;
+  cursor: pointer;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    img {
+      padding: 27px;
+    }
+    &:hover {
+      box-shadow: 0 0 0 1rem $primary;
+      border-radius: 50%;
+    }
+  }
+}
+.icon-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1231px;
+  max-height: 188px;
+  gap: 188px;
+  div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 285px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    span {
+      @include font('Ubuntu-Bold', $black, 20, 700);
+    }
+    p {
+      margin-top: 8px;
+      @include font('Ubuntu-Regular', $gray, 16, 400);
+      line-height: 25.6px;
+    }
+    img {
+      width: 42px;
+      height: 40px;
+      margin-bottom: 24px;
+    }
+  }
+}
+.form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 24px;
+  div {
+    display: flex;
+    flex-direction: column;
+    label {
+      @include font('Ubuntu-Regular', $gray, 14, 400);
+      margin-bottom: 8px;
+    }
+  }
+}

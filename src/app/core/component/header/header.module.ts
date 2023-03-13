@@ -4,10 +4,11 @@ import { HeaderComponent } from './header.component';
 import { PrimengModule } from '../../shared/primeng.module';
 import { register } from 'swiper/element/bundle';
 import { SliderComponent } from './slider/slider.component';
+import { SectionOneComponent } from './section-one/section-one.component';
 register();
 
 @NgModule({
-  declarations: [HeaderComponent, SliderComponent],
+  declarations: [HeaderComponent, SliderComponent, SectionOneComponent],
   imports: [CommonModule, PrimengModule],
   exports: [HeaderComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
