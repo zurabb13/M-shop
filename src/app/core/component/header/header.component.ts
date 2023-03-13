@@ -12,5 +12,20 @@ export class HeaderComponent implements OnInit {
     'assets/img/bg-image-3.jpg',
     'assets/img/bg-image-4.jpg',
   ];
-  ngOnInit() {}
+  ngOnInit() {
+    const mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
 }
