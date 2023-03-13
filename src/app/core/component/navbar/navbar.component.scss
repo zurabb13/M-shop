@@ -4,9 +4,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: $white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 
   ul {
@@ -19,7 +18,7 @@ nav {
     li {
       margin-left: 20px;
       gap: 40px;
-      padding: 7px 10px;
+      padding: 10px 12px 5px 12px;
       border-radius: 5px;
       cursor: pointer;
       &:first-child {
@@ -44,7 +43,7 @@ nav {
   }
 }
 a {
-  color: $black;
+  @include font('Ubutnu-Bold', $black, 16, 700);
   text-decoration: none;
   display: flex;
   align-items: center;
