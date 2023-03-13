@@ -1,0 +1,146 @@
+@import '../../../../../assets/scss/link';
+.service {
+  background-color: #eeebeb;
+  height: 80vh;
+  width: 100%;
+  margin-top: 120px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    @include font('Ubuntu-Bold', $black, 46, 700);
+    margin-top: 40px;
+  }
+  p {
+    @include font('Ubuntu-Regular', $gray, 18, 400);
+    margin-top: 24px;
+  }
+  .list {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    div {
+      height: 285px;
+      background: $white;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+
+      a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 27px;
+        align-items: center;
+        width: 285px;
+        height: 100%;
+        position: relative;
+        transition: all 1s linear;
+
+        .bg-dark {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #1e212c;
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+        }
+        img {
+          display: block;
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          transition: filter 0.5s ease-in-out;
+        }
+        &:hover img {
+        }
+        h5 {
+          @include font('Ubuntu-Bold', $black, 20, 700);
+        }
+        h5 {
+          @include font('Ubuntu-Bold', $black, 20, 700);
+          transition: color 0.5s ease-in-out;
+        }
+      }
+      &:first-child:hover {
+        a {
+          background: url('../../../../../assets/img/service-1.jpg') no-repeat
+            center center / cover;
+
+          .bg-dark {
+            opacity: 0.6;
+          }
+
+          img {
+            filter: brightness(0) invert(1);
+          }
+          h5 {
+            color: $white;
+            z-index: 10;
+          }
+        }
+      }
+      &:nth-child(2):hover {
+        a {
+          background: url('../../../../../assets/img/service-2.jpg') no-repeat
+            center center / cover;
+          .bg-dark {
+            opacity: 0.6;
+          }
+          img {
+            filter: brightness(0) invert(1);
+          }
+          h5 {
+            color: $white;
+            z-index: 10;
+          }
+        }
+      }
+      &:nth-child(3):hover {
+        a {
+          background: url('../../../../../assets/img/service-3.jpg') no-repeat
+            center center / cover;
+          .bg-dark {
+            opacity: 0.6;
+          }
+          img {
+            filter: brightness(0) invert(1);
+          }
+
+          h5 {
+            color: $white;
+            z-index: 10;
+          }
+        }
+      }
+      &:last-child:hover {
+        a {
+          background: url('../../../../../assets/img/service-4.jpg') no-repeat
+            center center / cover;
+          .bg-dark {
+            opacity: 0.6;
+          }
+          img {
+            filter: brightness(0) invert(1);
+          }
+          h5 {
+            color: $white;
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+
+  .mt {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    h3 {
+      @include font('Ubuntu-Bold', $black, 28, 700);
+    }
+  }
+}
