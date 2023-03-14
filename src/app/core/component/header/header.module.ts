@@ -9,9 +9,15 @@ import { ServiceComponent } from './service/service.component';
 import { SectionProjectComponent } from './section-project/section-project.component';
 import { ProjectComponent } from './section-project/project/project.component';
 register();
-
 @NgModule({
-  declarations: [HeaderComponent, SliderComponent, SectionOneComponent, ServiceComponent, SectionProjectComponent, ProjectComponent],
+  declarations: [
+    HeaderComponent,
+    SliderComponent,
+    SectionOneComponent,
+    ServiceComponent,
+    SectionProjectComponent,
+    ProjectComponent,
+  ],
   imports: [CommonModule, PrimengModule],
   exports: [HeaderComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

@@ -1,4 +1,14 @@
-<div>
+<div class="header">
   <h2>Browse our selected projects and learn more about our work</h2>
-  <app-project></app-project>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let image of images">
+        <app-project [images]="image"></app-project>
+      </div>
+    </div>
+  </div>
+  <div class="profile">
+    <h3>Explore all our works</h3>
+    <button class="btn-or">View Portfolio</button>
+  </div>
 </div>
