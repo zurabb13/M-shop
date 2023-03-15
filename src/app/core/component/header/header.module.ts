@@ -12,6 +12,7 @@ import { SectionPartnerComponent } from './section-partner/section-partner.compo
 import { PartnersComponent } from './section-partner/partners/partners.component';
 import { SectionProgresComponent } from './section-progres/section-progres.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SectionNewsComponent } from './section-news/section-news.component';
 register();
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ register();
     SectionPartnerComponent,
     PartnersComponent,
     SectionProgresComponent,
+    SectionNewsComponent,
   ],
   imports: [CommonModule, PrimengModule, ReactiveFormsModule, FormsModule],
   exports: [HeaderComponent],

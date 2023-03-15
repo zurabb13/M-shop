@@ -3,3 +3,16 @@
 @import 'variables';
 @import 'reset';
 @import 'button';
+
+h1 {
+  @include font('Ubuntu-Bold', $black, 46, 700);
+}
+h3 {
+  @include font('Ubuntu-Bold', $black, 28, 700);
+}
+h5 {
+  @include font('Ubuntu-Bold', $black, 20, 700);
+}
+p {
+  @include font('Ubuntu-Regular', $gray, 16, 400);
+}
