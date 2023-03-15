@@ -8,6 +8,8 @@ import { SectionOneComponent } from './section-one/section-one.component';
 import { ServiceComponent } from './service/service.component';
 import { SectionProjectComponent } from './section-project/section-project.component';
 import { ProjectComponent } from './section-project/project/project.component';
+import { SectionPartnerComponent } from './section-partner/section-partner.component';
+import { PartnersComponent } from './section-partner/partners/partners.component';
 register();
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ register();
     ServiceComponent,
     SectionProjectComponent,
     ProjectComponent,
+    SectionPartnerComponent,
+    PartnersComponent,
   ],
   imports: [CommonModule, PrimengModule],
   exports: [HeaderComponent],

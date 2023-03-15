@@ -1,0 +1,16 @@
+.partner {
+  height: 132px;
+  a {
+    width: 174px;
+    height: inherit;
+    padding: 35px 30px;
+    display: flex;
+    img {
+      width: 120px;
+      height: 64px;
+      &:hover {
+        filter: brightness(2) invert(2);
+      }
+    }
+  }
+}

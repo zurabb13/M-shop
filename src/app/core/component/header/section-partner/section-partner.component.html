@@ -1,0 +1,36 @@
+<div class="header">
+  <h2>Supported by 12+ partners</h2>
+  <div class="swiper partners">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let partners of partner">
+        <app-partners [partner]="partners"></app-partners>
+      </div>
+    </div>
+  </div>
+  <div class="client">
+    <div class="details">
+      <h2>What our clients are saying</h2>
+      <div class="swiper clients">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" *ngFor="let client of clients">
+            <img class="img" [src]="client.image" alt="" />
+            <p>{{ client.text }}</p>
+            <span>{{ client.name }}</span> <br />
+            <span class="position">{{ client.position }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <a class="prev">
+          <img src="assets/svg/prev.svg" alt="prev" />
+        </a>
+        <a class="next">
+          <img src="assets/svg/next.svg" alt="next" />
+        </a>
+      </div>
+    </div>
+    <div class="partner-img">
+      <img src="assets/img/partners/partner.jpg" alt="" />
+    </div>
+  </div>
+</div>
