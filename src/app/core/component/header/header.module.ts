@@ -10,6 +10,8 @@ import { SectionProjectComponent } from './section-project/section-project.compo
 import { ProjectComponent } from './section-project/project/project.component';
 import { SectionPartnerComponent } from './section-partner/section-partner.component';
 import { PartnersComponent } from './section-partner/partners/partners.component';
+import { SectionProgresComponent } from './section-progres/section-progres.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 register();
 @NgModule({
   declarations: [
@@ -21,8 +23,9 @@ register();
     ProjectComponent,
     SectionPartnerComponent,
     PartnersComponent,
+    SectionProgresComponent,
   ],
-  imports: [CommonModule, PrimengModule],
+  imports: [CommonModule, PrimengModule, ReactiveFormsModule, FormsModule],
   exports: [HeaderComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
