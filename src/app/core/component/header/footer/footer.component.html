@@ -1,0 +1,68 @@
+<footer>
+  <div class="f-f">
+    <div class="logo">
+      <div class="footer">
+        <img src="assets/img/footer/logo.png" alt="logo" class="f-logo" />
+        <ul>
+          <li *ngFor="let logo of footerLogo">
+            <a>
+              <img [src]="logo" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p>
+        Createx Construction Bureau has been successfully operating in the USA
+        construction market since 2000. We are proud to offer you quality
+        construction and exemplary service. Our mission is to set the highest
+        standards for construction sphere.
+      </p>
+    </div>
+    <div class="subs">
+      <h4>Let’s stay in touch</h4>
+      <form>
+        <input type="text" placeholder="Your email address " />
+        <button class="btn-or">SUBSCRIBE</button>
+      </form>
+      <p>
+        *Subscribe to our newsletter to receive communications and early updates
+        from Createx Construction Bureau.
+      </p>
+    </div>
+  </div>
+  <section>
+    <div>
+      <h6>HEAD OFFICE</h6>
+      <ul>
+        <li><span>Address:</span>{{ address }}</li>
+        <li><span>Call: </span>{{ call }}</li>
+        <li><span>Email:</span>{{ email }}</li>
+      </ul>
+    </div>
+    <div>
+      <h6>WHO WE ARE</h6>
+      <ul>
+        <li>About Us</li>
+        <li>Available Positions</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+    <div>
+      <h6>OUR EXPERIENCE</h6>
+      <ul>
+        <li>Services</li>
+        <li>Work</li>
+        <li>News</li>
+      </ul>
+    </div>
+  </section>
+  <div class="copyright">
+    <div>
+      <span>© All rights reserved. Made with {{ baram }}</span>
+    </div>
+    <div>
+      <span>GO TO TOP</span>
+      <img src="assets/img/footer/up-btn.svg" alt="" />
+    </div>
+  </div>
+</footer>
