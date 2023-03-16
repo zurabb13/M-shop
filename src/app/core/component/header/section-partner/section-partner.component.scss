@@ -1,14 +1,16 @@
 @import '../../../../../assets/scss/link';
 .header {
   max-height: 50%;
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
+  background-color: $gray-200;
+  padding-top: 80px;
 
   h2 {
     @include font('Ubuntu-Bold', $black, 46, 700);
     text-align: center;
   }
   .client {
+    margin-top: 152px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -17,6 +19,7 @@
     .details {
       max-width: 600px;
       height: 300px;
+
       h2 {
         margin-bottom: 60px;
       }

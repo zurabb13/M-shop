@@ -17,4 +17,11 @@ export class FooterComponent {
     'assets/img/footer/tw.svg',
     'assets/img/footer/yt.svg',
   ];
+  goToTop(event: any) {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
 }
