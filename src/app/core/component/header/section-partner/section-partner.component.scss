@@ -81,3 +81,26 @@
     }
   }
 }
+
+@media screen and (min-width: 390px) and (max-width: 480px) {
+  .header {
+    h2 {
+      font-size: 30px !important;
+      margin-bottom: 20px;
+    }
+    .client {
+      flex-direction: column;
+      gap: 50px;
+      margin: 60px 0 30px 0;
+      .details {
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 170px;
+      }
+    }
+    .partner-img {
+      border: 1px solid red;
+      display: none;
+    }
+  }
+}

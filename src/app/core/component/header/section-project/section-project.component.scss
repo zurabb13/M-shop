@@ -22,3 +22,19 @@ h2 {
   margin: 120px 0 60px 0;
   line-height: 60px;
 }
+
+@media screen and (min-width: 390px) and (max-width: 480px) {
+  .header {
+    margin: 0;
+
+    h2 {
+      margin: 20px 0 !important;
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .profile {
+      flex-direction: column;
+    }
+  }
+}

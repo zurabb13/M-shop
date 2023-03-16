@@ -2,6 +2,7 @@
 .header {
   margin-top: 180px;
   text-align: center;
+  padding: 0 10px 0 10px;
   h1 {
     margin-bottom: 60px;
   }
@@ -106,4 +107,34 @@ img {
   width: 100%;
   transition: transform 0.3s ease-in-out;
   will-change: transform;
+}
+
+@media screen and (min-width: 390px) and (max-width: 480px) {
+  .header {
+    margin-top: 0;
+    padding-top: 48px;
+    h1 {
+      font-size: 30px;
+    }
+    .news {
+      flex-direction: column;
+      .second {
+        .divider {
+          max-width: 370px;
+          img {
+            width: 100%;
+            height: 113px;
+          }
+        }
+      }
+    }
+    .last {
+      flex-direction: column;
+      gap: 10px;
+      .btn-or {
+        width: 225px;
+      }
+      margin-bottom: 50px;
+    }
+  }
 }

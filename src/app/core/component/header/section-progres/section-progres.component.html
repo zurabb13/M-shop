@@ -2,15 +2,19 @@
   <h2>Some facts and figures</h2>
   <br />
   <div class="bar">
-    <div class="progress" *ngFor="let item of info">
-      <p-knob
-        [size]="148"
-        [(ngModel)]="item.value"
-        [valueColor]="item.color"
-        [readonly]="true"
-        [strokeWidth]="5"
-      ></p-knob>
-      <p>{{ item.text }}</p>
+    <div class="swiper progres">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of info">
+          <p-knob
+            [size]="148"
+            [(ngModel)]="item.value"
+            [valueColor]="item.color"
+            [readonly]="true"
+            [strokeWidth]="5"
+          ></p-knob>
+          <p>{{ item.text }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

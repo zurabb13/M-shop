@@ -47,6 +47,11 @@ export class SectionPartnerComponent implements AfterViewInit {
         delay: 2000,
         disableOnInteraction: true,
       },
+      breakpoints: {
+        300: {
+          slidesPerView: 2,
+        },
+      },
     });
     const clientSwiper = new Swiper('.clients', {
       loop: true,

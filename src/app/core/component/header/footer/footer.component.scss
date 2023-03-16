@@ -69,6 +69,8 @@ footer {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-right: none;
+        transition: border-color 0.2s ease-in-out,
+          background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         &:focus {
           background-color: $white;
         }
@@ -119,6 +121,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     color: white;
+    margin-bottom: 20px;
     div {
       //text-align: center;
       //vertical-align: center;
@@ -128,6 +131,49 @@ footer {
       a {
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 480px) {
+  footer {
+    padding: 40px 15px 0 15px;
+    .f-f {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .logo {
+      .footer {
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        ul {
+          margin-left: 10px;
+        }
+      }
+      p {
+        line-height: 20px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .subs {
+    //border: 1px solid red;
+  }
+  section {
+    flex-direction: column;
+  }
+  .copyright {
+    justify-content: space-around;
+    div {
+      display: inline-block;
+    }
+    span {
+      font-size: 14px;
+    }
+    .goTop {
+      border: 1px solid red;
+      display: none;
     }
   }
 }

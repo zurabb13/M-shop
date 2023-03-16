@@ -7,6 +7,10 @@
   border: 1px solid $primary;
   border-radius: 4px;
   background-color: $primary;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $primary-bold;
+  }
 }
 .btn-tr {
   @include font('Ubuntu-Bold', $white, 16, 700);
@@ -15,6 +19,12 @@
   border: 1px solid white;
   border-radius: 4px;
   background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
 }
 .btn-tr-sm {
   @include font('Ubuntu-Bold', $primary, 16, 700);
@@ -43,4 +53,9 @@
   background: $gray-200;
   border-radius: 4px;
   outline: none;
+}
+.btn-or,
+.btn-tr,
+.btn-tr-sm:hover {
+  cursor: pointer;
 }
