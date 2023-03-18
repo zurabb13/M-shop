@@ -3,7 +3,7 @@
   max-height: 50%;
   width: 100%;
   background-color: $gray-200;
-  padding-top: 80px;
+  padding: 80px 30px 0 30px;
 
   h2 {
     @include font('Ubuntu-Bold', $black, 46, 700);
@@ -99,8 +99,24 @@
       }
     }
     .partner-img {
-      border: 1px solid red;
       display: none;
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .header {
+    h2 {
+      font-size: 30px;
+    }
+    .client {
+      .details {
+        max-width: 405px;
+      }
+    }
+    .partner-img {
+      img {
+        max-width: 440px !important;
+      }
     }
   }
 }

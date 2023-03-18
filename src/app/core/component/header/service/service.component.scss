@@ -144,7 +144,7 @@
     }
   }
 }
-
+//mobile
 @media screen and (max-width: 480px) {
   .service {
     margin-top: 0 !important;
@@ -220,6 +220,23 @@
     text-align: center;
     h3 {
       font-size: 24px !important;
+    }
+  }
+}
+
+//tablet
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .service {
+    padding: 0 20px 0 20px;
+    .list {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+      div {
+        width: 440px;
+        a {
+          width: 100%;
+        }
+      }
     }
   }
 }
