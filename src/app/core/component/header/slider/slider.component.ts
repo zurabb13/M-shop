@@ -7,6 +7,7 @@ import {
   ViewChild,
 } from '@angular/core';
 import Swiper from 'swiper';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-slider',
@@ -16,7 +17,10 @@ import Swiper from 'swiper';
 export class SliderComponent implements OnInit, AfterViewInit {
   @Input() image!: string[];
   @ViewChild('slideText') slideText!: ElementRef;
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init();
+    window.addEventListener('load', AOS.refresh);
+  }
   ngAfterViewInit(): void {
     const swiper = new Swiper('.swiper-container');
   }

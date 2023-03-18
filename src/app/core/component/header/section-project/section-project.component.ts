@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import Swiper from 'swiper';
-
+import * as AOS from 'aos';
 @Component({
   selector: 'app-section-project',
   templateUrl: './section-project.component.html',

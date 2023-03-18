@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import Swiper from 'swiper';
-
+import * as AOS from 'aos';
 @Component({
   selector: 'app-section-partner',
   templateUrl: './section-partner.component.html',

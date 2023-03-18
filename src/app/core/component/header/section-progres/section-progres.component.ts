@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
-
+import * as AOS from 'aos';
+import Aos from 'aos';
 @Component({
   selector: 'app-section-progres',
   templateUrl: './section-progres.component.html',
@@ -21,6 +22,8 @@ export class SectionProgresComponent implements AfterViewInit, OnInit {
     window.addEventListener('resize', () => {
       this.windowWidth = window.innerWidth;
     });
+    AOS.init();
+    window.addEventListener('load', AOS.refresh);
   }
   ngAfterViewInit() {}
 }
