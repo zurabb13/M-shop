@@ -1,14 +1,30 @@
 @import '../../../../assets/scss/link';
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: $white;
   padding: 20px;
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  box-shadow: 0 1.75rem 1.875rem rgba(154, 156, 165, 0.08),
+    0 1.25rem 1rem rgba(154, 156, 165, 0.05),
+    0 0.5rem 0.625rem rgba(154, 156, 165, 0.04),
+    0 0.25rem 0.25rem rgba(30, 33, 44, 0.03);
 
+  .navbar {
+    width: 1280px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
   ul {
     display: flex;
     list-style: none;
@@ -22,6 +38,7 @@ nav {
       padding: 10px 12px 5px 12px;
       border-radius: 5px;
       cursor: pointer;
+
       &:first-child {
         margin-left: 0;
       }
@@ -29,11 +46,7 @@ nav {
   }
   .list {
     li {
-      &:first-child {
-        &:hover {
-          background-color: transparent;
-        }
-      }
+      transition: all 0.4s ease-in-out;
       &:hover {
         background-color: $primary-bold;
         a {
@@ -45,7 +58,6 @@ nav {
 }
 .second {
   .media {
-    display: none;
   }
   &:last-child {
     display: none;
@@ -59,20 +71,6 @@ a {
   img {
     margin-right: 10px;
     height: auto;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  ul {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
-  li {
-    margin-left: 0;
   }
 }
 
@@ -94,6 +92,7 @@ a {
       gap: 0;
       width: 160px;
       overflow: hidden;
+      margin-left: 40px;
 
       ul {
       }
@@ -101,7 +100,6 @@ a {
       li {
         margin: 0;
       }
-      //margin: 0;
       .media {
         display: inline-block;
         //margin: 0;
@@ -111,6 +109,22 @@ a {
       }
       .a {
         display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 991px) {
+  nav {
+    ul {
+      li {
+      }
+    }
+    .second {
+      display: flex;
+      li {
+        .media {
+          display: none;
+        }
       }
     }
   }
