@@ -11,34 +11,30 @@
     display: inline-block;
     @include font('Ubuntu-Bold', $black, 46, 700);
   }
-  .bar {
-    width: 100%;
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      text-align: center;
-      gap: 30px;
-    }
-  }
+
   p {
     @include font('Ubuntu-Regular', $gray, 14, 400);
   }
+
+  .progress {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (min-width: 390px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .header {
     margin-top: 40px;
+
     h2 {
       text-align: center;
       font-size: 30px;
     }
-    .bar {
-      width: 100%;
-      .swiper-slide {
-        flex-direction: column;
-        gap: 0;
-      }
+    .progress {
+      flex-direction: column;
     }
   }
 }

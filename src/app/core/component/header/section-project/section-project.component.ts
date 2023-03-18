@@ -19,9 +19,32 @@ export class SectionProjectComponent implements AfterViewInit {
   ];
   ngAfterViewInit() {
     const swiper = new Swiper('.mySwiper', {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 30,
       loop: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: true,
+          },
+        },
+        768: {
+          slidesPerView: 2,
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: true,
+          },
+        },
+        900: {
+          slidesPerView: 3,
+          autoplay: {
+            delay: 2000,
+            disableOnInteraction: true,
+          },
+        },
+      },
     });
   }
 }

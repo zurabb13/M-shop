@@ -48,8 +48,11 @@ export class SectionPartnerComponent implements AfterViewInit {
         disableOnInteraction: true,
       },
       breakpoints: {
-        300: {
+        0: {
           slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 6,
         },
       },
     });

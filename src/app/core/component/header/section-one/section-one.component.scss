@@ -10,6 +10,7 @@
 
   h2 {
     @include font('Ubuntu-Bold', $black, 46, 700);
+    text-align: center;
   }
   p {
     @include font('Ubuntu-Regular', $gray, 18, 400);
@@ -80,6 +81,9 @@
     }
   }
 }
+.send {
+  margin-top: 50px;
+}
 .form {
   margin-top: 30px;
   display: flex;
@@ -97,7 +101,7 @@
   }
 }
 
-@media screen and (min-width: 390px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section {
     margin-top: 100px;
     h2 {
