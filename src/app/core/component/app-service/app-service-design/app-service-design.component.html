@@ -1,0 +1,12 @@
+<div class="project">
+  <div class="info" *ngFor="let item of service">
+    <div class="img">
+      <img [src]="item.img" alt="" />
+    </div>
+    <div class="details">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.text }}</p>
+      <button class="btn-tr">Learn more</button>
+    </div>
+  </div>
+</div>

@@ -30,7 +30,7 @@ register();
     FooterComponent,
   ],
   imports: [CommonModule, PrimengModule, ReactiveFormsModule, FormsModule],
-  exports: [HeaderComponent],
+  exports: [HeaderComponent, ProjectComponent, FooterComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HeaderModule {}

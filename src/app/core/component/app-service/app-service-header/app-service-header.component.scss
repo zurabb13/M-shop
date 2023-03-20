@@ -1,0 +1,23 @@
+@import '../../../../../assets/scss/link';
+div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  height: 500px;
+  //position: relative;
+  margin-top: 98px;
+  width: 100%;
+  background: url('../../../../../assets/img/services/header.png') right
+    no-repeat;
+  backdrop-filter: opacity(20%);
+  z-index: 10000000;
+  h1 {
+    @include font('Ubuntu-Bold', $black, 94, 600);
+  }
+  p {
+    @include font('Ubuntu-Regular', $gray, 20, 400);
+    max-width: 600px;
+    line-height: 30px;
+  }
+}
