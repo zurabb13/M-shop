@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './core/component/header/header.module';
 import { NavbarComponent } from './core/component/navbar/navbar.component';
 import { AppServiceModule } from './core/component/app-service/app-service.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { AppServiceModule } from './core/component/app-service/app-service.modul
     HeaderModule,
     NavbarComponent,
     AppServiceModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

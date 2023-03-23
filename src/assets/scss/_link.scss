@@ -5,7 +5,7 @@
 @import 'button';
 
 h1 {
-  @include font('Ubuntu-Bold', $black, 46, 700);
+  @include font('Ubuntu-Bold', $black, 72, 700);
 }
 h3 {
   @include font('Ubuntu-Bold', $black, 28, 700);

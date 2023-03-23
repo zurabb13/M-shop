@@ -1,0 +1,29 @@
+.panel {
+  position: relative;
+  h1 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+  }
+  p-tabView {
+    p-tabPanel {
+    }
+  }
+}
+::ng-deep.p-tabview .p-tabview-nav {
+  top: 16rem;
+}
+.p-tabview-nav-content {
+}
+::ng-deep.p-tabview-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 336px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}

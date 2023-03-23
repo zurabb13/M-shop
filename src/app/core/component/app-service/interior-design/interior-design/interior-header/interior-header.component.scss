@@ -1,0 +1,40 @@
+@import '../../../../../../../assets/scss/link';
+.logo {
+  background-image: url('../../../../../../../assets/img/service-design.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  padding-top: 4rem;
+
+  nav {
+    ol {
+      display: flex;
+      li {
+        padding-left: 5px;
+        &:after {
+          content: ' /';
+        }
+        &:last-child:after {
+          content: '';
+        }
+        a {
+          text-decoration: none;
+          color: $gray-900;
+        }
+      }
+    }
+  }
+  .header {
+    max-width: 600px;
+    h1 {
+      margin-top: 2.5rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.4;
+    }
+    p {
+      @include font('Ubuntu-Regular', $gray, 20, 400);
+      line-height: 2;
+    }
+  }
+}

@@ -7,6 +7,13 @@ const routes: Routes = [
     path: '',
     component: AppServiceComponent,
   },
+  {
+    path: 'service/interior-design',
+    loadChildren: () =>
+      import(
+        '../app-service/interior-design/interior-design/interior-design.module'
+      ).then((design) => design.InteriorDesignModule),
+  },
 ];
 
 @NgModule({
