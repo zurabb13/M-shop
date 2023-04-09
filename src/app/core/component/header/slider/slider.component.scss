@@ -37,8 +37,24 @@
 
 @media screen and (max-width: 480px) {
   .slide-content {
+    padding-top: 200px;
     h1 {
       font-size: calc(1.575rem + 3.9vw) !important;
+    }
+    .bt {
+      flex-direction: column;
+      .btn-or {
+        width: 280px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 840px) and (min-width: 481px) {
+  .slide-content {
+    padding-top: 200px;
+
+    h1 {
+      font-size: calc(1.9rem + 3.9vw) !important;
     }
     .bt {
       flex-direction: column;
